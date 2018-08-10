@@ -233,7 +233,7 @@ class DefaultController extends \yii\web\Controller
                         'vars' => ''
                     ];
                 } else {
-                    $log[ 'vars' ] .= utf8_encode( $line );
+                    $log[ 'vars' ] = utf8_encode( $line );
                 }
             }
             fclose( $file );
